@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            darkblue:'#08070B',
+            lightblue:'#24232C',
+            lightgray:'#E6E5EA'
+          },
+          fontFamily: {
+               Font: ["Anybody"],
+              },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-darkblue">
+    
+    <div class="flex flex-col justify-center items-center gap-7 mt-20">
+        <h1 class="text-lightblue text-center font-Font font-bold text-2xl">Password Generator</h1>
+  <div class="flex bg-lightblue w-fit mx-auto py-4 gap-[460px] px-3 ">
+    <div class="justify-self-start ml-3">
+        <p class="text-lightgray font-Font text-2xl ">P4$5W0rD!</p>
+    </div>
+    <div class="justify-self-end">
+        <img src="img/icon1.png" alt="" class="w-6 mr-3">
+    </div>
+  </div>
+
+      <div class="bg-lightblue h-fit px-3">
+        <div class="flex bg-lightblue w-fit mx-auto py-4 gap-96 px-4 ">
+            <div>
+                <p class="text-lightgray font-Font text-xl">Character Lengthd</p>
+            </div>
+            <div>
+                <img src="img/icon2.png" alt="" class="w-5">
+            </div>
+        </div>
+        <form class="px-3 ">
+            <input type="range" class="w-full  accent-rounded-none  cursor-pointer accent-green-300 "
+        </form>
+        <div class="flex flex-col gap-4 mt-6 text-lightgray text-xl font-Font">
+        <div class="flex gap-8">
+            <div>
+                <input type="checkbox" class="scale-150 accent-green-300">
+            </div>
+            <div>
+                <p class="font-Font">Include Uppercase Letters</p>
+            </div>
+        </div>
+        <div class="flex gap-8">
+            <div>
+                <input type="checkbox" class="scale-150 accent-green-300">
+            </div>
+            <div>
+                <p class="font-Font">Include Lowercase Letters</p>
+            </div>
+        </div>
+        <div class="flex gap-8">
+            <div>
+                <input type="checkbox" class="scale-150 accent-green-300">
+            </div>
+            <div>
+                <p class="font-Font">Include Numbers</p>
+            </div>
+        </div>
+        <div class="flex gap-8">
+            <div>
+                <input type="checkbox" class="scale-150 accent-green-300">
+            </div>
+            <div>
+                <p class="font-Font">Include Symbols</p>
+            </div>
+        </div>
+        </div>
+        <button class="px-3 w-full px-4 py-4 bg-green-400 mt-10 mb-10 font-Font text-2xl text-lightblue">GENERATE</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>
